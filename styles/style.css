@@ -1,0 +1,133 @@
+/* Importando fontes */
+@import url('https://fonts.googleapis.com/css2?family=Krona+One&family=Montserrat:wght@400;600&display=swap');
+
+/* Definindo variáveis de cores */
+:root {
+    --cor-primaria: #000000;
+    --cor-secundaria: #f6f6f6;
+    --cor-terciaria: #22D4FD;
+    --cor-quarterciaria: #656464;
+}
+
+/* Resetando margens e paddings */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* Estilos do corpo */
+body {
+    background-color: var(--cor-primaria);
+    color: var(--cor-secundaria);
+    font-family: 'Montserrat', sans-serif;
+}
+
+/* Estilos do cabeçalho */
+.cabecalho {
+    padding: 2% 0% 0% 15%;
+}
+
+.cabecalho_menu {
+    display: flex;
+    gap: 80px;
+}
+
+.cabecalho_menu_link {
+    font-size: 24px;
+    font-weight: 600;
+    color: var(--cor-terciaria);
+    text-decoration: none;
+}
+
+/* Estilos da apresentação */
+.apresentacao {
+    padding: 5% 15%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 82px;
+}
+
+.apresentacao__conteudo {
+    width: 50%;
+    display: flex;
+    flex-direction: column;
+    gap: 40px;
+}
+
+.apresentacao__conteudo__titulo {
+    font: 2.25rem 'Krona One', sans-serif;
+    color: var(--cor-terciaria);
+}
+
+.apresentacao__conteudo__texto {
+    font: 1.5rem;
+}
+
+.apresentacao__links {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+    gap: 32px;
+}
+
+.apresentacao_links_subtitulo {
+    font-weight: 400;
+    font-size: 24px;
+}
+
+.apresentacao__links__link {
+    border: 2px solid var(--cor-terciaria);
+    width: 378px;
+    text-align: center;
+    border-radius: 8px;
+    font: 1.5rem 'Montserrat', sans-serif;
+    font-weight: 600;
+    padding: 21.5px 0;
+    text-decoration: none;
+    color: var(--cor-secundaria);
+}
+
+.apresentacao__links__link:hover {
+    background-color: var(--cor-quarterciaria);
+    padding: 4%;
+}
+
+/* Estilos do rodapé */
+.rodape {
+    padding: 23px;
+    color: var(--cor-primaria);
+    background-color: var(--cor-terciaria);
+    text-align: center;
+    font-size: 1.5rem;
+    font-weight: 400;
+}
+
+.Adrielle {
+    width: 50%;
+    height: 50%;
+}
+
+/* Media query para telas menores */
+@media (max-width: 1200px) {
+    .cabecalho {
+        padding: 10%;
+    }
+
+    .cabecalho_menu {
+        justify-content: center;
+    }
+    
+    .apresentacao {
+        flex-direction: column-reverse;
+        padding: 5%;
+    }
+
+    .apresentacao__conteudo {
+        width: auto;
+    }
+}
+
+
